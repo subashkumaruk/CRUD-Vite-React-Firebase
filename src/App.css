@@ -1,0 +1,222 @@
+body {
+    background-color: #00416a;
+    overflow-x: hidden;
+}
+
+.App {
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.heading {
+    font-size: 3rem;
+    color: #00ffdd;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    margin: 5px 20px;
+    padding: 30px 50px;
+    box-shadow: 0px 0px 8px #595959;
+    background-color: #09789d;
+}
+
+.formcontrol {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.formcontrol label {
+    color: #ffffff;
+    flex: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.formcontrol input {
+    color: #434341;
+    flex: 2;
+    border-radius: 5px;
+    border: 0px solid #434341;
+    font-size: 30px;
+    font-weight: 500px;
+    outline: none;
+}
+
+.formcontrol input:focus {
+    box-shadow: 1px 2px 5px #fff;
+    background-color: #c5c5c5;
+}
+
+.btn {
+    background-color: #009dff;
+    flex: 3;
+    font-size: 20px;
+    padding: 1rem 6rem;
+    margin: 10px;
+    border-radius: 10px;
+    border: 0;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    color: #00ffdd;
+    background-color: #2e5d7a;
+    transform: translate(2px, 2px);
+}
+
+.section {
+    max-width: 100%;
+    font-size: 25px;
+}
+
+.section table {
+    width: 100%;
+    border: 0px;
+    margin-top: 50px;
+    background-color: #09789d;
+}
+
+.section table tr {
+    padding: 10px 0px;
+}
+
+.section table tbody tr:nth-child(even) {
+    background-color: #2e5d7a;
+}
+
+.section table thead {
+    background-color: #010f25;
+    color: #00ffdd;
+    text-align: center;
+}
+
+.section table th {
+    padding: 5px 20px;
+    max-width: 100%;
+}
+
+.section table tbody {
+    max-width: 100%;
+}
+
+.section table td {
+    color: #fff;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.section input[type='change'] {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding: 2px 5px;
+    background-color: #009dff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    margin: 10px;
+    width: 30%;
+    transition: all 0.3s ease-in;
+}
+
+.section input[type='change']:hover {
+    color: #00ffdd;
+    background-color: #2e5d7a;
+    transform: translate(2px, 2px);
+}
+
+.section table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+/*Setting the table width is important!*/
+
+.section table.fixed td {
+    overflow: hidden;
+}
+
+@media screen and ( max-width:500px) {
+    .heading {
+        font-size: 25px;
+    }
+    .container {
+        padding: 0;
+    }
+    form {
+        width: 60%;
+        margin: 5px;
+    }
+    .formcontrol {
+        flex-direction: column;
+    }
+    .formcontrol label {
+        text-align: left;
+        margin: 2px 0;
+    }
+    .btn {
+        padding: 2px 35px;
+        font-size: 16px;
+    }
+    .section {
+        text-align: center;
+        font-size: 15px;
+    }
+    .section table {
+        width: 100%;
+    }
+    .section table,
+    .section table tr,
+    .section table td {
+        display: block;
+        width: 100%;
+    }
+    .section table thead {
+        display: none;
+    }
+    .section table th {
+        color: #00ffdd;
+        background-color: #010f25;
+    }
+    .section table tr {
+        margin-bottom: 15px;
+    }
+    .section table td {
+        text-align: right;
+        margin: 0px 1px;
+        max-width: 90%;
+        word-wrap: break-word;
+        position: relative;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .section input[type='change'] {
+        font-size: 16px;
+        margin: 0 3px;
+    }
+    .section table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 25%;
+        /* padding: 50%; */
+        font-size: 15px;
+        text-align: center;
+        color: #00ffdd;
+        background-color: #010f25;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
